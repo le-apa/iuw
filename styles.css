@@ -1,22 +1,27 @@
+body {
+    margin: 0;
+}
+
 .nav-top{
-    padding: 10px 2%;
+    padding: 0;
     background-color: rgb(98, 98, 98);
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     top: 0;
     color: white;
-    display: block;
-    text-align: center;
 }
 
 
 .nav-top ul{
+    margin: auto;
     list-style-type: none;
-    overflow: hidden;
+    padding: 20px;
+    text-align: center;
 }
 
 .nav-top li{
-    padding: 15px;
-    float: left;
+    padding: 25px;
+    float: none;
+    display: inline;
 }
 
 h1{
