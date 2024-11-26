@@ -1,13 +1,22 @@
 .nav-top{
     padding: 10px 2%;
-    background-color: blue;
+    background-color: rgb(98, 98, 98);
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     top: 0;
+    color: white;
+    display: block;
+    text-align: center;
 }
 
 
 .nav-top ul{
-    color: red;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.nav-top li{
+    padding: 15px;
+    float: left;
 }
 
 h1{
