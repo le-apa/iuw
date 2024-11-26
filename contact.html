@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Contact us</title>
 </head>
-<body class="contactbody" style="background-image: url(background.jpg);">
+<body style="background-image: url(background.jpg);">
 
     <nav class="nav-top">
         <ul>
@@ -16,34 +16,33 @@
         </ul>
     </nav>
 
+<div class="test">
     <nav class="form">
-        <form action="POST">
+        <form action="contact.php" method="post">
+            <h1>kies ontvanger:</h1>
             <div class="boxes">
-                <p>kies ontvanger:
-                <label for="Alexander">Alexander</label>
-                <input type="radio" id="Alexander" value="Alexander" name="receiver">
-                <label for="Hidde">Hidde</label>
+                <label class="Alexander" for="Alexander">Alexander</label>
+                <input type="radio" id="Alexander" name="receiver">
+                <label class="Hidde" for="Hidde">Hidde</label>
                 <input type="radio" for="Hidde" id="Hidde" name="receiver">
-                <label for="Tobias">Tobias</label>
-                <input type="radio" for="Tobias" id="receiver" name="receiver">
-                </p>
+                <label class="Tobias" for="Tobias">Tobias</label>
+                <input type="radio" for="Tobias" id="Tobias" name="receiver">
             </div>
-            <div class="name">
+        <div class="wrapper">
                 <label for="naam">Naam:</label>
                 <input type="text" id="naam" name="naam" placeholder="Uw naam">
-            </div>
-            <div class="email">
                 <label for="naam">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Uw email">
-            </div>
+        </div> 
             <div class="message">
                 <label for="bericht">Uw bericht:</label>
-                <input type="text" id="bericht" name="bericht" placeholder="Uw bericht">
+                <textarea type="text" id="bericht" name="bericht"></textarea>
             </div>
-            <div>
-                <button type="submit" name="versturen">versturen</button> 
+            <div class="submitbutton">
+                <button type="submit" name="versturen" value="verstuur">versturen</button>
             </div>
         </form>
     </nav>
+</div>
 </body>
 </html>
