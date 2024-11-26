@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Contact us</title>
 </head>
-<body style="background-image: url(background.jpg);">
+<body class="contactbody" style="url(background.jpg);">
 
     <nav class="nav-top">
         <ul>
@@ -18,15 +18,25 @@
 
     <nav class="form">
         <form action="POST">
-            <div>
+            <div class="boxes">
+                <p>kies ontvanger:
+                <label for="Alexander">Alexander</label>
+                <input type="radio" id="Alexander" value="Alexander" name="receiver">
+                <label for="Hidde">Hidde</label>
+                <input type="radio" for="Hidde" id="Hidde" name="receiver">
+                <label for="Tobias">Tobias</label>
+                <input type="radio" for="Tobias" id="receiver" name="receiver">
+                </p>
+            </div>
+            <div class="name">
                 <label for="naam">Naam:</label>
                 <input type="text" id="naam" name="naam" placeholder="Uw naam">
             </div>
-            <div>
+            <div class="email">
                 <label for="naam">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Uw email">
             </div>
-            <div>
+            <div class="message">
                 <label for="bericht">Uw bericht:</label>
                 <input type="text" id="bericht" name="bericht" placeholder="Uw bericht">
             </div>
@@ -35,12 +45,5 @@
             </div>
         </form>
     </nav>
-
-    <nav class="Homepage-big-text">
-        <ul>
-            <li>Hidde's email: hiddevanetten@gmail.com</li>
-        </ul>
-    </nav>
-    <!-- hier je p, h1, h2, h3 of andere code die je graag wilt schrijven -->
 </body>
 </html>
