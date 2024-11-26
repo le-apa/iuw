@@ -1,5 +1,13 @@
-p{
+.nav-top{
+    padding: 10px 2%;
+    background-color: blue;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    top: 0;
+}
 
+
+.nav-top ul{
+    color: red;
 }
 
 h1{
