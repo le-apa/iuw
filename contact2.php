@@ -3,9 +3,11 @@
 if (isset($_POST["receiver"], $_POST["naam"], $_POST["email"], $_POST["bericht"])){
     $naam = $_POST["naam"];
     $email = $_POST["email"];
-
-
-?>
+    $msg = wordwrap($_POST["bericht"],70);
+    $headers = "From: 7578512@students.uu.nl";
+    
+    if(mail($_POST["email"],$_POST["naam"],$msg,$headers)){
+        ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -46,10 +48,14 @@ Tobias
 </div>
 </body>
 </html>
+    
 
-<?php
-}
-else{
+
+<?php 
+ }else{
+    header("Location: contact.php?error=De mailserver kon de mail niet versturen.");
+ } 
+}else{
     header("Location: contact.php?error=Gelieve alle velden in te vullen.");
 }
 ?>
