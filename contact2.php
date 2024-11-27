@@ -6,7 +6,7 @@ if (isset($_POST["receiver"], $_POST["naam"], $_POST["email"], $_POST["bericht"]
     $msg = "Bedankt dat u contact met ons heeft opgenomen, " . $_POST["naam"] . "! We zullen zo snel mogelijk contact met u opnemen via ".$_POST["email"].".\nMet vriendelijke groet,\nAlexander Le\nHidde van Etten\nTobias van Hooft";
     $headers = "From: 7578512@students.uu.nl";
     
-    if(mail($_POST["email"],$_POST["naam"],$msg,$headers)){
+    if(mail($naam,$email,$msg,$headers)){
         ?>
 
 <!DOCTYPE html>
