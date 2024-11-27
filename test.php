@@ -2,7 +2,7 @@
 
 $to = "7578512@students.uu.nl";
 $msg = "First line of text\nSecond line of text";
-$headers = "From: S.J.Overbeek@uu.nl";
+$headers = "From: 7578512@students.uu.nl";
 
 // use wordwrap() if lines are longer than 70 characters
 $msg = wordwrap($msg,70);
