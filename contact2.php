@@ -6,7 +6,7 @@ if (isset($_POST["receiver"], $_POST["naam"], $_POST["email"], $_POST["bericht"]
     $msg = "Bedankt dat u contact met ons heeft opgenomen, " . $_POST["naam"] . "! We zullen zo snel mogelijk contact met u opnemen via ".$_POST["email"].".\nMet vriendelijke groet,\nAlexander Le\nHidde van Etten\nTobias van Hooft";
     $headers = "From: 7578512@students.uu.nl";
     
-    // if(mail($_POST["email"],$_POST["naam"],$msg,$headers)){
+    if(mail($_POST["email"],$_POST["naam"],$msg,$headers)){
         ?>
 
 <!DOCTYPE html>
@@ -60,9 +60,9 @@ if (fwrite($myfile,"Please contact " . $_POST["naam"] . " at the following email
     echo"fail";
 }
 
-//  }else{
-//     header("Location: contact.php?error=De mailserver kon de mail niet versturen.");
-//  } 
+}else{
+     header("Location: contact.php?error=De mailserver kon de mail niet versturen.");
+  } 
 }else{
     header("Location: contact.php?error=Gelieve alle velden in te vullen.");
 }
