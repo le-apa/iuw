@@ -1,35 +1,13 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 body {
     margin: 0;
 }
 
-video{
-    justify-content: center;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-h1{
-    text-align: center;
-}
-
-.Homepage-big-text{
-    text-align: center;
-}
-
-.Homepage-big-text h1{
-    font-size: 50px;
-    padding: 25px;
-}
-
-.Homepage-big-text p{
-    padding-left: 200px;
-    padding-right: 200px;
-}
-
-.nav-top{
+.nav-top {
     position: sticky;
     padding: 0;
     background-color: rgb(98, 98, 98);
@@ -39,91 +17,115 @@ h1{
     right: 0;
 }
 
-
-.nav-top ul{
+.nav-top ul {
     margin: auto;
     list-style-type: none;
     padding: 20px;
     text-align: center;
 }
 
-.nav-top li{
+.nav-top li {
     padding: 20px;
     float: none;
     display: inline;
 }
 
-.nav-top a{
+.nav-top a {
     padding: 20px;
     color: whitesmoke;
     text-decoration: none;
 }
 
-.nav-top a:hover{
+.nav-top a:hover {
     background-color: rgb(69, 69, 69);
 }
 
-.images{
-    padding: 20px;
-    display: flexbox;
+.Homepage-big-text {
     text-align: center;
 }
 
-img{
+.Homepage-big-text h1 {
+    font-size: 50px;
+    padding: 25px;
+}
+
+.Homepage-big-text p {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+h1 {
+    text-align: center;
+}
+
+video {
+    justify-content: center;
+}
+
+.images {
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+img {
     width: 500px;
     padding: 50px;
 }
 
-.test{
+.test {
     display: flex;
     justify-content: center;
     margin-top: 10%;
 }
 
-.form{
+.form {
     padding: 2%;
-    margin: 2;
     background-color: whitesmoke;
     border-radius: 20px;
     box-shadow: 0 0 50px rgb(0, 0, 0);
 }
 
-.boxes{
+.boxes {
     text-align: center;
     white-space: nowrap;
     margin: 5%;
 }
 
-.Alexander, .Hidde, .Tobias{
+.Alexander, .Hidde, .Tobias {
     margin: 0%;
 }
 
-.wrapper{
+.wrapper {
     text-align: center;
     white-space: nowrap;
 }
 
-.message{
+.message {
     margin-top: 5%;
 }
 
-.message textarea{
+.message textarea {
     width: 100%;
     height: 150px;
     padding: 0;
 }
 
-.submitbutton{
+.submitbutton {
     padding-top: 5%;
     text-align: center;
 }
 
-.error{
+.error {
     color: red;
     text-align: center;
 }
 
-.success{
+.success {
     text-align: center;
     margin: 5%;
 }
