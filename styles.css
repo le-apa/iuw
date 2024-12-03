@@ -126,7 +126,10 @@ footer p {
 
 .about-text h1{
     font-size: 40px;
+    margin: 0 3rem;
+    padding: 5rem;
 }
+
 .about-text p{
     font-size: 16px;
     padding: 1rem;
