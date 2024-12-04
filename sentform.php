@@ -18,6 +18,8 @@
             <li><a href="../Werkcollegeopdracht/about.html">About</a></li>
             <li><a href="../Werkcollegeopdracht/gallery.html">Gallery</a></li>
             <li><a href="../Werkcollegeopdracht/contact.html">Contact us</a></li>
+            <li><a href="../Werkcollegeopdracht/bootstrap.html">Bootstrap</a></li>
+            <li><a href="../Werkcollegeopdracht/responsive.html">Responsive</a></li>
         </ul>
     </nav>
     <?php

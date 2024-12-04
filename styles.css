@@ -9,9 +9,6 @@ html, body {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -28,6 +25,15 @@ footer {
     background: rgb(98, 98, 98);
     color: white;
     margin-top: 1rem;
+}
+
+footer p {
+    text-align: center;
+    padding: 1rem;
+    background: rgb(98, 98, 98);
+    color: white;
+    margin-top: 1rem;
+    border-radius: 2rem;
 }
 
 .video {
@@ -56,6 +62,8 @@ footer {
     list-style-type: none;
     padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 .nav-top li {
@@ -74,11 +82,20 @@ footer {
     background-color: rgb(69, 69, 69);
 }
 
-.index-text{
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.index-text {
     text-align: center;
-    width:80%;
-    height:auto;
-    margin:auto;
+    width: 80%;
+    height: auto;
+    margin: auto;
     margin-top: 3rem;
     padding: 1rem;
     background: beige;
@@ -103,46 +120,34 @@ footer {
     padding-right: 200px;
 }
 
-
-footer p {
-    text-align: center;
-    padding: 1rem;
-    background: rgb(98, 98, 98);
-    color: white;
-    margin-top: 1rem;
-    border-radius: 2rem;
-}
-
 .about-text {
     text-align: center;
-    width:70%;
-    height:auto;
+    width: 70%;
+    height: auto;
     margin: 2rem auto;
     padding: 1rem;
     background: white;
     border-radius: 2rem;
 }
 
-.about-text h1{
+.about-text h1 {
     font-size: 40px;
     margin: 0 3rem;
     padding: 5rem;
 }
 
-.about-text p{
+.about-text p {
     font-size: 16px;
     padding: 1rem;
     font-style: italic;
 }
+
 h1 {
     text-align: center;
 }
 
 video {
     justify-content: center;
-}
-
-.images {
 }
 
 .gallery {
@@ -199,5 +204,3 @@ img {
     padding-top: 5%;
     text-align: center;
 }
-
-
