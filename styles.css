@@ -12,7 +12,6 @@ body {
     display: flex;
     flex-direction: column;
 
-    background-image: url('/media/images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -201,12 +200,4 @@ img {
     text-align: center;
 }
 
-.error {
-    color: red;
-    text-align: center;
-}
 
-.success {
-    text-align: center;
-    margin: 5%;
-}
