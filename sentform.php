@@ -30,7 +30,7 @@
                 $email = htmlspecialchars($_POST['email']);
                 echo "<h1 class='success'> Beste $naam, Bedankt voor het invullen van het formulier. We zullen u binnenkort via $email contacteren. Met vriendelijke groet, Alexander, Hidde, Tobias</h1>";
             } else {
-                echo "<h1 class='error'>Failed to send mail.</h1>";
+                header("Location: contact.php?error=De mailserver kon de mail niet versturen.");
             }
             ?>
         </div>
