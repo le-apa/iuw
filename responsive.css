@@ -1,4 +1,4 @@
-@media only screen and (max-width: 620px)
+/* @media only screen and (max-width: 620px)
 {
     background-image: none;
     background-color: green;
@@ -13,4 +13,10 @@ and (max-width :  839px)
 @media only screen
 and (min-width : 840px)
 {
+} */
+
+.check{
+    font-size: 30px;
+    color: whitesmoke;
+    float: right;
 }
