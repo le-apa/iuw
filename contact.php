@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Contact us</title>
 </head>
+
 <body style="background-image: url(background.jpg);">
     <nav class="nav-top">
         <ul>
