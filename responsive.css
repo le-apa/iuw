@@ -37,7 +37,8 @@ html{
     top: 0;
     left: 0;
     right: 0;
-    padding: 20px;
+    height: 60px;
+    padding: 0;
 }
 
 .nav-top ul {
@@ -57,7 +58,7 @@ html{
 }
 
 .nav-top a {
-    padding: 20px;
+    /* padding: 20px; */
     color: whitesmoke;
     text-decoration: none;
 }
@@ -66,7 +67,7 @@ html{
     background-color: rgb(69, 69, 69);
 }
 
-.check{
+.nav-top .check{
     display: none;
 }
 
@@ -79,11 +80,12 @@ html{
         display: none;
     }
 
-    .check{
+    .nav-top .check{
         display: flex;
         font-size: 30px;
         color: whitesmoke;
-        line-height: 40px;
         cursor: pointer;
+        padding: 20px;
+
     }
 }
