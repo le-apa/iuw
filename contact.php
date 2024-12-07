@@ -17,7 +17,7 @@
         </ul>
     </nav>
 
-    <div class="test">
+    <div class="form-container">
         <form class="form" action="sentform.php" method="post">
             <div class="wrapper">
                 <label for="name">Name:</label>
