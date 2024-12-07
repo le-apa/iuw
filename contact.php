@@ -29,6 +29,8 @@
                 <label for="message">Message:</label>
                 <textarea type="text" id="message" name="message"></textarea>
             </div>
+            <?php
+            if (isset($_GET["error"])){ ?> <p class="error"><?php echo $_GET["error"] ?> </p> <?php } ?>
             <div class="submitbutton">
                 <button type="submit" name="submit" value="submit">Submit</button>
             </div>
