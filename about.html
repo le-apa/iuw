@@ -11,7 +11,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="contact.php">Contact us</a></li>
             <li><a href="bootstrap.html">Bootstrap</a></li>
             <li><a href="responsive.html">Responsive</a></li>
         </ul>
