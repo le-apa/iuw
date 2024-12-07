@@ -60,7 +60,6 @@ footer p {
 .nav-top ul {
     margin: auto;
     list-style-type: none;
-    padding: 20px;
     text-align: center;
     display: flex;
     justify-content: space-around;
