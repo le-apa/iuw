@@ -161,7 +161,7 @@ img {
     padding: 50px;
 }
 
-.test {
+.form-container {
     display: flex;
     justify-content: center;
     margin-top: 10%;
@@ -202,4 +202,20 @@ img {
 .submitbutton {
     padding-top: 5%;
     text-align: center;
+}
+
+.phpform-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.error{
+    color: red;
+    text-align: center;
+}
+
+.success{
+    text-align: center;
+    margin: 5%;
 }

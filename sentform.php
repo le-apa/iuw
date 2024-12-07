@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Contact us</title>
 </head>
-<body>
+<body style="background-image: url(background.jpg);">
     <nav class="nav-top">
         <ul>
             <li><a href="../Werkcollegeopdracht/index.html">Home</a></li>
@@ -22,12 +22,31 @@
             <li><a href="../Werkcollegeopdracht/responsive.html">Responsive</a></li>
         </ul>
     </nav>
-    <?php
-    if ($mail_status) {
-        echo $msg;
-    } else {
-        echo "Failed to send mail.";
-    }
-    ?>
+    <div class="form-container">
+        <div class="form">
+            <?php
+            if ($mail_status) {
+                $naam = htmlspecialchars($_POST['name']);
+                $email = htmlspecialchars($_POST['email']);
+                echo "<h1 class='success'> Beste $naam, Bedankt voor het invullen van het formulier. We zullen u binnenkort via $email contacteren. Met vriendelijke groet, Alexander, Hidde, Tobias</h1>";
+            } else {
+                echo "<h1 class='error'>Failed to send mail.</h1>";
+            }
+            ?>
+        </div>
+    </div>
 </body>
 </html>
+
+<?php
+    $myfile = fopen($_POST["naam"] . ".txt", "w");
+    if (fwrite($myfile,"Please contact " . $_POST["naam"] . " at the following email: " . $_POST["email"]))
+    {
+        echo "success";
+    }
+    else
+    {
+        echo"fail";
+    }
+    fclose($myfile);
+?>

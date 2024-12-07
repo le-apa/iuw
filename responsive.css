@@ -1,27 +1,7 @@
 @media only screen and (max-width: 620px)
 {
-    .nav-top{
-        padding: 2rem;
-    }
-
-    .nav-top h1{
-        font-size: 20px;
-    }
-
-    .nav-top ul {
-        flex-direction: column;
-        align-items: center;
-        display: none;
-    }
-
-    .nav-top ul.show {
-        display: flex;
-    }
-
-    .nav-toggle {
-        display: block;
-        margin: 10px;
-    }
+    background-image: none;
+    background-color: green;
 }
 
 @media only screen
