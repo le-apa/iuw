@@ -207,4 +207,5 @@ img {
 .error{
     color: red;
     text-align: center;
+    justify-content: center;
 }
