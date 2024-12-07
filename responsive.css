@@ -37,6 +37,7 @@ html{
     top: 0;
     left: 0;
     right: 0;
+    padding: 20px;
 }
 
 .nav-top ul {
@@ -48,9 +49,11 @@ html{
 }
 
 .nav-top li {
-    padding: 20px;
+    /* padding-bottom: 20px;
+    padding-top: 20px; */
     float: none;
     display: inline;
+    white-space: nowrap;
 }
 
 .nav-top a {
@@ -64,18 +67,23 @@ html{
 }
 
 .check{
-    font-size: 30px;
-    color: whitesmoke;
-    line-height: 40px;
-    cursor: pointer;
+    display: none;
 }
 
 #check{
     display: none;
 }
 
-@media(max-width: 900px){
-    .nav-top{
+@media(max-width: 650px){
+    .nav-top ul {
         display: none;
+    }
+
+    .check{
+        display: flex;
+        font-size: 30px;
+        color: whitesmoke;
+        line-height: 40px;
+        cursor: pointer;
     }
 }
