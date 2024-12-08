@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Contact us</title>
 </head>
-<body style="background-image: url(background.jpg);">
+<body>
     <nav class="nav-top">
         <ul>
             <li><a href="../Werkcollegeopdracht/index.html">Home</a></li>
