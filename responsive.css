@@ -13,6 +13,10 @@ html{
     padding: 0;
 }
 
+body {
+    background-color: lightgrey;
+}
+
 .nav-top {
     position: sticky;
     padding: 0;
@@ -32,8 +36,7 @@ html{
 }
 
 .nav-top li {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
     float: none;
     display: inline;
 }
@@ -56,7 +59,70 @@ input{
     display: none;
 }
 
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.2rem;
+}
+
+.container {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px 0;
+}
+
+.container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 1.1rem;
+}
+
+.gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.gallery-images img {
+    width: 40vw;
+    height: auto;
+    padding: 50px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/* Mobiel grootte */
 @media(max-width: 665px){
+    body{
+        background-color: white;
+    }
 
     ul{
         position: fixed;
@@ -70,21 +136,21 @@ input{
         background-color: rgb(98, 98, 98);
     }
 
-.nav-top{
-    position: sticky;
-}
+    .nav-top{
+        position: sticky;
+    }
 
     .nav-top ul li{
         line-height: 30px;
     }
 
     .nav-top .hamburger-menu{
-    margin: auto;
-    line-height: 60px;
-    font-size: 30px;
-    color: whitesmoke;
-    display: inline;
-    padding-left: 20px;
+        margin: auto;
+        line-height: 60px;
+        font-size: 30px;
+        color: whitesmoke;
+        display: inline;
+        padding-left: 20px;
     }
 
     .hamburger-menu{
@@ -93,5 +159,78 @@ input{
 
     .hamburger-menu:has(input:checked) + .ultest {
         left: 0;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .container {
+        background-color: #cccccc;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+
+    .gallery h2 {
+        font-size: 1.5rem;
+    }
+
+    .gallery-images img {
+        width: 80vw;
+    }
+}
+
+/* Tablet grootte */
+@media (min-width: 665px) and (max-width: 1200px)
+{
+    body{
+    background-color: slategrey;
+    }
+
+    .content {
+        color: white;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        background-color: #7f8ba9;
+        color: white;
+    }
+
+    .container h2 {
+        font-size: 1.6rem;
+    }
+
+    .container p {
+        font-size: 1.05rem;
+    }
+
+    .gallery {
+        color: white;
+    }
+
+    .gallery h2 {
+        font-size: 2rem;
+    }
+
+    .gallery-images img {
+        width: 80vw;
     }
 }

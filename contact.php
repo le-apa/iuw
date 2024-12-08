@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="styles.css">
     <title>Contact us</title>
 </head>
-
 <body style="background-image: url(background.jpg);">
     <nav class="nav-top">
         <ul>
@@ -17,7 +16,6 @@
             <li><a href="responsive.html">Responsive</a></li>
         </ul>
     </nav>
-
     <div class="form-container">
         <form class="form" action="sentform.php" method="post">
             <div class="wrapper">

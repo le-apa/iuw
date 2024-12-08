@@ -8,43 +8,15 @@ html, body {
     font-family: 'Montserrat', sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-
-main {
-    flex: 1;
-}
-
-footer {
-    bottom: 0;
-    text-align: center;
-    padding: 3rem;
-    background: rgb(98, 98, 98);
-    color: white;
-    margin-top: 1rem;
-}
-
-footer p {
-    text-align: center;
-    padding: 1rem;
-    background: rgb(98, 98, 98);
-    color: white;
-    margin-top: 1rem;
-    border-radius: 2rem;
-}
-
-.video {
-    display: flex;
-    justify-content: center;
-    margin-top: 1%;
-}
-
-* {
-    margin: 0;
-    padding: 0;
 }
 
 .nav-top {
@@ -66,7 +38,7 @@ footer p {
 }
 
 .nav-top li {
-    padding: 20px;
+    padding: 20px 0;
     float: none;
     display: inline;
 }
@@ -79,26 +51,6 @@ footer p {
 
 .nav-top a:hover {
     background-color: rgb(69, 69, 69);
-}
-
-.nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: whitesmoke;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.index-text {
-    text-align: center;
-    width: 80%;
-    height: auto;
-    margin: auto;
-    margin-top: 3rem;
-    padding: 1rem;
-    background: beige;
-    border-radius: 2rem;
 }
 
 .index-title {
@@ -117,6 +69,17 @@ footer p {
 .index-title p {
     padding-left: 200px;
     padding-right: 200px;
+}
+
+.index-text {
+    text-align: center;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 1rem;
+    background: #dae2fa;
+    border-radius: 2rem;
 }
 
 .about-text {
@@ -139,14 +102,6 @@ footer p {
     font-size: 16px;
     padding: 1rem;
     font-style: italic;
-}
-
-h1 {
-    text-align: center;
-}
-
-video {
-    justify-content: center;
 }
 
 .gallery {
@@ -174,16 +129,6 @@ img {
     box-shadow: 0 0 50px rgb(0, 0, 0);
 }
 
-.boxes {
-    text-align: center;
-    white-space: nowrap;
-    margin: 5%;
-}
-
-.Alexander, .Hidde, .Tobias {
-    margin: 0%;
-}
-
 .wrapper {
     text-align: center;
     white-space: nowrap;
@@ -204,8 +149,46 @@ img {
     text-align: center;
 }
 
-.error{
-    color: red;
+h1 {
     text-align: center;
+    font-size: 25px;
+}
+
+h2{
+    color: #757474;
+    font-size: 20px;
+}
+
+h3{
+    color: #d02929;
+    font-size: 15px;
+}
+
+h4{
+    color: #3c7226;
+    font-size: 14px;
+}
+
+footer {
+    bottom: 0;
+    text-align: center;
+    padding: 3rem;
+    background: rgb(98, 98, 98);
+    color: white;
+    margin-top: 1rem;
+}
+
+footer p {
+    text-align: center;
+    padding: 1rem;
+    background: rgb(98, 98, 98);
+    color: white;
+    margin-top: 1rem;
+    border-radius: 2rem;
+}
+
+.video {
+    display: flex;
     justify-content: center;
+    margin-top: 1%;
 }

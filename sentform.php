@@ -28,7 +28,7 @@
             if ($mail_status) {
                 $naam = htmlspecialchars($_POST['name']);
                 $email = htmlspecialchars($_POST['email']);
-                echo "<h1 class='success'> Beste $naam, Bedankt voor het invullen van het formulier. We zullen u binnenkort via $email contacteren. Met vriendelijke groet, Alexander, Hidde, Tobias</h1>";
+                echo "<h1> Beste $naam, Bedankt voor het invullen van het formulier. We zullen u binnenkort via $email contacteren. Met vriendelijke groet, Alexander, Hidde, Tobias</h1>";
             } else {
                 header("Location: contact.php?error=De mailserver kon de mail niet versturen.");
             }
@@ -40,12 +40,10 @@
 
 <?php
     $myfile = fopen($_POST["naam"] . ".txt", "w");
-    if (fwrite($myfile,"Please contact " . $_POST["naam"] . " at the following email: " . $_POST["email"]))
-    {
+    if (fwrite($myfile,"Please contact " . $_POST["naam"] . "at the following email: " . $_POST["email"])){
         echo "success";
     }
-    else
-    {
+    else{
         echo"fail";
     }
     fclose($myfile);
