@@ -111,13 +111,6 @@ input{
     padding: 50px;
 }
 
-footer {
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-}
-
 /* Mobiel grootte */
 @media(max-width: 665px){
     body{
